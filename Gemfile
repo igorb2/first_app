@@ -13,6 +13,7 @@ end
 
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.0'
+# random change
 gem 'sass-rails',   '4.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
