@@ -4,12 +4,12 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
-
+gem 'pg', ">= 0.15.0"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-group :development do
-  gem 'sqlite3', '1.3.8'
-end
+#group :development do
+#  gem 'sqlite3', '1.3.8'
+#end
 
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.0'
@@ -43,14 +43,16 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'rspec-rails',      ">= 2.13.0"
   gem "debugger"
 end
 
-gem 'capybara', ">= 2.2.0"
+group :test do
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', ">= 2.2.0"
+end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
