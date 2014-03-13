@@ -62,3 +62,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :test do
+  gem "debugger"
+end
