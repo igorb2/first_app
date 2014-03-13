@@ -44,7 +44,10 @@ end
 
 group :development, :test do
   gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem "debugger"
 end
+
+gem 'capybara', ">= 2.2.0"
 
 group :production do
   gem 'pg', '0.15.1'
@@ -62,6 +65,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-group :test do
-  gem "debugger"
-end
